@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="blindSpotTarot.js" defer></script>
+    <link rel="stylesheet" href="blindSpotTarot.css" />
+
+    <title>blind spot tarot</title>
+  </head>
+  <body>
+    <button id="backButton">go back</button>
+    <header>
+      <h1>Blind Spot Tarot Reading</h1>
+      <p>
+        This tarot spread is designed to help you uncover and understand your
+        blind spots — those aspects of yourself or your situation that you may
+        not be fully aware of. By revealing these hidden influences, the reading
+        aims to provide clarity and guidance for personal growth and
+        decision-making.
+      </p>
+    </header>
+    <main>
+      <section class="explanation">
+        <div>
+          <p class="firstCard">
+            This card reflects the truth you are aware of — what you consciously
+            acknowledge in your life. It shows your current perspective and the
+            patterns you can clearly identify.
+          </p>
+          <button id="button1" class="generateButton">
+            Generate your first card
+          </button>
+        </div>
+        <div>
+          <p class="secondCard">
+            This card reveals what you are overlooking, either out of fear,
+            habit, or denial. It highlights hidden influences or truths that
+            affect your choices without your awareness.
+          </p>
+          <button id="button2" class="generateButton">
+            Generate your seconde card
+          </button>
+        </div>
+        <div>
+          <p class="thirdCard">
+            This card offers guidance on how to navigate the situation. It
+            points toward actions, attitudes, or perspectives that can help you
+            respond wisely and consciously."
+          </p>
+          <button id="button3" class="generateButton">
+            Generate your third card
+          </button>
+        </div>
+        <div>
+          <p class="fourthCard">
+            This card shows what could emerge if you integrate awareness of your
+            blind spot. It represents growth, hidden opportunities, or outcomes
+            that remain unseen until you act.
+          </p>
+          <button id="button4" class="generateButton">
+            Generate your fourth card
+          </button>
+        </div>
+      </section>
+      <section class="cardsDisplay">
+        <div id="firstCard"></div>
+        <div id="secondCard"></div>
+        <div id="thirdCard"></div>
+        <div id="fourthCard"></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
