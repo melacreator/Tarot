@@ -236,6 +236,7 @@ body:hover #backButton {
   #backButton {
     font-size: 1em;
     padding: 10px 15px 10px 30px;
+    color: var(--card-shadow);
   }
   footer {
     font-size: 0.95em;

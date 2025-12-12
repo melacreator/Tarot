@@ -102,6 +102,7 @@ main {
 }
 
 #sideButtonRight1 {
+  font-weight: bold;
   width: 300px;
   color: transparent;
   position: absolute;
@@ -141,24 +142,6 @@ body:hover #sideButtonRight1 {
     100% 51%
   );
   animation: slideIn 0.9s ease-in-out;
-}
-
-@media (min-width: 1000px) {
-  body:hover #sideButtonRight1 {
-    animation: slideIn 1.9s ease-in-out;
-  }
-  body:hover #sideButtonRight2 {
-    animation: slideIn 1.9s ease-in;
-  }
-  body:hover #sideButtonRight3 {
-    animation: slideIn 1.9s ease-out;
-  }
-  body:hover #sideButtonLeft1 {
-    animation: slideInToLeft 1.9s ease-in-out;
-  }
-  body:hover #sideButtonLeft2 {
-    animation: slideInToLeft 1.9s ease-in;
-  }
 }
 
 #sideButtonRight2 {
@@ -339,17 +322,38 @@ body:hover #sideButtonLeft2 {
   }
   #sideButtonRight1 {
     top: 600px;
+    color: var(--color);
   }
   #sideButtonLeft1 {
     top: 650px;
   }
-  /* #sideButtonRight2 {
+  #sideButtonRight2 {
     top: 700px;
-  } */
+    color: var(--color);
+  }
   #sideButtonLeft2 {
     top: 750px;
   }
   #sideButtonRight3 {
     top: 800px;
+    color: var(--color);
+  }
+}
+
+@media (min-width: 1000px) {
+  body:hover #sideButtonRight1 {
+    animation: slideIn 1.9s ease-in-out;
+  }
+  body:hover #sideButtonRight2 {
+    animation: slideIn 1.9s ease-in;
+  }
+  body:hover #sideButtonRight3 {
+    animation: slideIn 1.9s ease-out;
+  }
+  body:hover #sideButtonLeft1 {
+    animation: slideInToLeft 1.9s ease-in-out;
+  }
+  body:hover #sideButtonLeft2 {
+    animation: slideInToLeft 1.9s ease-in;
   }
 }
