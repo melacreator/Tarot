@@ -10,22 +10,22 @@ const thirdCard = document.querySelector(".thirdCard");
 const fourthCard = document.querySelector(".fourthCard");
 
 const firstContainer = document.getElementById("firstCard");
-firstContainer.textContent = "first card";
+
 firstContainer.style.color = "#d3b76d";
 firstContainer.style.fontFamily = "Georgia, serif";
 
 const secondContainer = document.getElementById("secondCard");
-secondContainer.textContent = "second card";
+
 secondContainer.style.color = "#d3b76d";
 secondContainer.style.fontFamily = "Georgia, serif";
 
 const thirdContainer = document.getElementById("thirdCard");
-thirdContainer.textContent = "third card";
+
 thirdContainer.style.color = "#d3b76d";
 thirdContainer.style.fontFamily = "Georgia, serif";
 
 const fourthContainer = document.getElementById("fourthCard");
-fourthContainer.textContent = "fourth card";
+
 fourthContainer.style.color = "#d3b76d";
 fourthContainer.style.fontFamily = "Georgia, serif";
 
