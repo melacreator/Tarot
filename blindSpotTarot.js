@@ -164,29 +164,3 @@ fourthButton.addEventListener("click", () => {
 document.getElementById("backButton").addEventListener("click", () => {
   window.location.href = "index.html";
 });
-
-firstContainer.addEventListener("mouseover", () => {
-  firstButton.classList.add("hover-effect");
-});
-firstContainer.addEventListener("mouseout", () => {
-  firstButton.classList.remove("hover-effect");
-});
-
-secondContainer.addEventListener("mouseover", () => {
-  secondButton.classList.add("hover-effect");
-});
-secondContainer.addEventListener("mouseout", () => {
-  secondButton.classList.remove("hover-effect");
-});
-thirdContainer.addEventListener("mouseover", () => {
-  thirdButton.classList.add("hover-effect");
-});
-thirdContainer.addEventListener("mouseout", () => {
-  thirdButton.classList.remove("hover-effect");
-});
-fourthContainer.addEventListener("mouseover", () => {
-  fourthButton.classList.add("hover-effect");
-});
-fourthContainer.addEventListener("mouseout", () => {
-  fourthButton.classList.remove("hover-effect");
-});

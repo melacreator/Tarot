@@ -32,6 +32,8 @@ body {
   background-image: var(--gradient);
   background-size: 400%;
   animation: bg-animation 20s infinite alternate;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 main {
   width: 60%;
@@ -62,6 +64,11 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 1em;
+}
+p {
+  font-size: 1.5rem;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .title {
@@ -159,10 +166,6 @@ body:hover #sideButtonRight1 {
   cursor: pointer;
   letter-spacing: 1px;
   clip-path: none;
-
-  @media (max-width: 600px) {
-    top: 700px;
-  }
 }
 
 @keyframes slideIn {
@@ -316,27 +319,34 @@ body:hover #sideButtonLeft2 {
   );
   animation: slideInToLeft 0.9s ease-in;
 }
-@media (max-width: 600px) {
-  main {
-    width: 90%;
+
+@media (max-width: 1400px) {
+  body {
+    height: 150vh;
+  }
+  footer {
+    position: relative;
   }
   #sideButtonRight1 {
-    top: 600px;
-    color: var(--color);
+    top: 10px;
   }
   #sideButtonLeft1 {
-    top: 650px;
+    top: 50px;
   }
   #sideButtonRight2 {
-    top: 700px;
-    color: var(--color);
+    top: 110px;
   }
   #sideButtonLeft2 {
-    top: 750px;
+    top: 160px;
   }
   #sideButtonRight3 {
-    top: 800px;
-    color: var(--color);
+    top: 210px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    height: 220vh;
   }
 }
 
@@ -355,5 +365,34 @@ body:hover #sideButtonLeft2 {
   }
   body:hover #sideButtonLeft2 {
     animation: slideInToLeft 1.9s ease-in;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 250vh;
+  }
+  main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 460px) {
+  body {
+    height: 400vh;
+  }
+}
+@media (max-width: 220px) {
+  body {
+    height: 600vh;
+  }
+  #sideButtonRight1,
+  #sideButtonRight2,
+  #sideButtonRight3,
+  #sideButtonLeft1,
+  #sideButtonLeft2 {
+    width: fit-content;
+    font-size: 0.8em;
+    padding: 10px;
   }
 }
